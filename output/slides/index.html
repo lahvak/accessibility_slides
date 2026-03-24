@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2026-03-24T11:37:02-04:00       *-->
+<!--*   A recent stable commit (2022-07-01):   *-->
+<!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Accessibility</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.css" integrity="sha512-cbQXwDFK7lj2Fqfkuxbo5iD1dSbLlJGXGpfTDqbggqjHJeyzx88I3rfwjS38WJag/ihH7lzuGlGHpDBymLirZQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.css" integrity="sha512-nXlJLUeqPMp1Q3+Bd8Qds8tXeRVQscMscwysJm821C++9w6WtsFbJjPenZ8cQVMXyqSAismveQJc0C1splFDCA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/solarized.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"></script><link href="_static/pretext/css/pretext-reveal.css" rel="stylesheet">
+<style></style>
+</head>
+<body><div class="reveal ptx-content">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="slides">
+<section><section><h1>Accessibility</h1>
+<h2>
+<span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>, PreTeXt, Quarto, ...</h2>
+<table>
+<tr><th align="center" style="border-bottom: 0px;">Jan Hlavacek</th></tr>
+<tr><td align="center" style="border-bottom: 0px;">SVSU</td></tr>
+<tr><td align="center"></td></tr>
+</table>
+<h4>An accessibility discussion</h4>
+<h4><div class="date">March 24, 2026</div></h4></section><section><h3>Abstract</h3>
+<div align="left">
+<p>We will cover using <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>, PreTeXt, and, if time permits, Quarto to produce a variety of accessible documents.</p>
+<p>This is a second paragraph of the abstract for this talk, just so we have something a bit more substantial.</p>
+<p><div class="displaymath process-math" id="root-1-2-3-3-3-1">
+\begin{equation*}
+\definiteintegral{-\pi}{\frac{3\pi}{2}}{\frac{\sin t}{t}}{t}
+\end{equation*}
+</div></p>
+</div></section></section><section><section><h1><span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span></h1></section><section><h3>Observations</h3>
+<div align="left"><p>Some things that I found mostly produce "accessible" pdfs.</p></div></section><section><h3>Issues</h3>
+<div align="left">
+<p>First, some issues I ran into:</p>
+<ul class="disc" id="root-1-2-4-3-3">
+<li class="fragment">What is "accessible"?</li>
+<li class="fragment">Several standards (ua/1, ua/2, …)</li>
+<li class="fragment">Standards are vague (both <em class="emphasis">feature</em> and <em class="emphasis">bug</em>).</li>
+<li class="fragment">Different "validators".</li>
+<li class="fragment">Some things cannot be validated.</li>
+</ul>
+</div></section><section><h3>UA/1 vs. UA/2</h3>
+<div align="left">
+<p><span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> produces UA/2</p>
+<p>Typst produces UA/1, automatically?</p>
+<p>You can <em class="emphasis">probably</em> convert from <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> to Typst using Pandoc.</p>
+</div></section><section><h3>What I did</h3>
+<div align="left"><ol class="decimal" id="root-1-2-4-5-2">
+<li class="fragment">Use , not XeLaTeX or </li>
+<li class="fragment">Turn tagging on and specify standards: <code class="code-inline tex2jax_ignore">\DocumentMetadata</code>
+</li>
+<li class="fragment">Use <code class="code-inline tex2jax_ignore">unicode-math</code> with good unicode font (Luciole)</li>
+<li class="fragment">Include additional metadata using <code class="code-inline tex2jax_ignore">hyperref</code> package</li>
+<li class="fragment">Limit what packages I use</li>
+<li class="fragment">Provide alt text for any graphics</li>
+</ol></div></section><section><h3>Turn on tagging</h3>
+<div align="left"><div class="code-box"><pre class="program"><code class="language-latex">\DocumentMetadata{
+     lang        = en,
+     pdfstandard = ua-2,
+     pdfstandard = a-4f, %or a-4
+     tagging=on,
+     tagging-setup={math/setup=mathml-SE} 
+   }
+</code></pre></div></div></section><section><h3>Use unicode math</h3>
+<div align="left"><div class="code-box"><pre class="program"><code class="language-latex">\usepackage{unicode-math, fontspec}
+\usepackage{luciole-math}
+\setmainfont{Luciole}
+\usepackage{fontawesome6}
+</code></pre></div></div></section><section><h3>Additional metadata</h3>
+<div align="left"><div class="code-box"><pre class="program"><code class="language-latex">\usepackage[implicit=false]{hyperref}
+\hypersetup{
+    pdflang={en-US},
+    pdftitle={Exam 1 for Math 132B, Winter 2026},
+    pdfauthor={Jan Hlavacek},
+    pdfsubject={Statistics}
+}
+</code></pre></div></div></section><section><h3>Limit what packages I use</h3>
+<div align="left">
+<p><a class="external" href="https://latex3.github.io/tagging-project/tagging-status/" target="_blank">Tagging Status of LaTeX Packages and Classes</a></p>
+<p>My pet peeve: <code class="code-inline tex2jax_ignore">enumitem</code>!</p>
+<p>Also avoid things like margin notes, footnotes etc.</p>
+</div></section><section><h3>Alt text</h3>
+<div align="left">
+<p><div class="code-box"><pre class="program"><code class="language-latex">\includegraphics[alt = {A short description}]{filename.png}
+</code></pre></div></p>
+<div class="fragment"><p><div class="code-box"><pre class="program"><code class="language-latex">\begin{tikzpicture}[alt={Line with some labels}]
+    \draw[thick] (0,0)node[left]{origin} --node[above]{line}
+    (3,0)node[right]{$x$};
+\end{tikzpicture}
+</code></pre></div></p></div>
+</div></section><section><h3>Validation</h3>
+<div align="left"><ul class="disc" id="root-1-2-4-11-2">
+<li><code class="code-inline tex2jax_ignore">verapdf</code></li>
+<li><code class="code-inline tex2jax_ignore">show-pdf-tags</code></li>
+</ul></div></section></section><section><section><h1>PreTeXt</h1></section><section><h3>The idea of PreTeXt</h3>
+<div align="left"><p><ol class="decimal" id="root-1-2-5-2-2-1">
+<li class="fragment">It is relatively easy to make simple web pages accessible.</li>
+<li class="fragment">
+<span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> has a good way to enter math formulas.</li>
+<li class="fragment">MathJaX formats <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> formulas for web in an accessible way.</li>
+<li class="fragment">It is hard to produce HTML from <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>.</li>
+<li class="fragment">Create a system that has many features of <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> but is easy to convert to an <em class="emphasis">accessible</em> HTML.</li>
+<li class="fragment">Make it also easy to convert <em class="emphasis">to</em> <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> so we can produce pdfs</li>
+<li class="fragment">While we are at it, let’s also produce a Braile version of the documents</li>
+</ol></p></div></section><section><h3></h3>
+<div align="left"><div class="code-box"><pre class="program"><code class="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+   &lt;pretext&gt;
+       &lt;book&gt;
+           &lt;title&gt;Hello world!&lt;/title&gt;
+           &lt;chapter&gt;
+               &lt;title&gt;Getting Started&lt;/title&gt;
+               &lt;p&gt;Welcome to PreTeXt!&lt;/p&gt;
+               &lt;p&gt;Math example: &lt;m&gt;x^2 + 2x + 1&lt;/m&gt;&lt;/p&gt;
+               &lt;p&gt;Display math:
+                   &lt;me&gt;\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}&lt;/me&gt;
+               &lt;/p&gt;
+               &lt;!-- TODO: find something more to say... --&gt;
+           &lt;/chapter&gt;
+       &lt;/book&gt;
+   &lt;/pretext&gt;
+</code></pre></div></div></section><section><h3>Documentation and guides</h3>
+<div align="left"><p><ul class="disc" id="root-1-2-5-4-2-1">
+<li><a class="external" href="https://pretextbook.org/doc/guide/html" target="_blank">PreTeXt book</a></li>
+<li><a class="external" href="https://mathtech.org/2025/08/17/handouts-and-worksheets.html" target="_blank">Handouts and worksheets in PreTeXt</a></li>
+<li><a class="external" href="https://prefigure.org/" target="_blank">PreFigure</a></li>
+</ul></p></div></section></section><section><section><h1>Quarto</h1></section><section><h3>Website</h3>
+<div align="left"><p><a class="external" href="https://quarto.org/" target="_blank">quarto.org</a></p></div></section></section>
+</div>
+</div></body>
+<script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script>
+</html>
