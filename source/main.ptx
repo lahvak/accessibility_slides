@@ -86,7 +86,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
                 <title>What I did</title>
 
                 <ol pause="yes">
-                    <li>Use <lualatex/>, not <xelatex/> or <pdflatex/></li>
+                    <li>Use lua<latex/>, not <xelatex/> or pdf<latex/></li>
                     <li>Turn tagging on and specify standards: <c>\DocumentMetadata</c></li>
                     <li>Use <c>unicode-math</c> with good unicode font (Luciole)</li>
                     <li>Include additional metadata using <c>hyperref</c> package</li>
